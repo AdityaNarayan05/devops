@@ -1,0 +1,8 @@
+---
+school:
+- name: SMS
+  principal: Ajay
+  Students:
+  - rn: 12
+    name: Aditya
+    marks: 8.05
