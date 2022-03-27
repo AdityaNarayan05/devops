@@ -1,0 +1,35 @@
+   BASIC COMMANDS:
+1: GENERAL
+git --version                                          :check installed git version
+git init                                               :create empty git repositry
+git status                                             :check working directory & staging area status
+git log                                                :display all commits of current branch
+
+2:COMMIT CREATION & ACCESS
+git ls-files                                           :list data in stagging area
+git add filename
+git add .                                              :Add single file or all WD files to staging area
+git commit -m "message"
+git checkout commitid                                  :checkout commit(detached head)
+
+3:BRANCH CREATION AND ACCESS
+git branch branch_name                                 :git switch branch_name: create new branch
+git checkout                                           :go to branch
+git checkout -b branch_name  git switch -c branch_name :craate and access new branch
+git merge other_branch                                 :bring other_branchs change to current branch
+
+3:DELETING DATA 
+WD FILE*            git rm filename                     :run command after file was deleted from working directory
+Unstagedchanges     git checkout (--) .
+                    git restore filename or .           :revert changes in tracked file
+                    git clean -df                       : delete untracked files
+Staged changes      git reset filename &
+                    git checkout --filename             :Remove files from stagging area
+                    git restore --Staged filename or .
+latest commits(s)   git reset HEAD~1
+                    git reset --soft HEAD~1             :undo latest(~1) commits
+                    git reset --hard HEAD~1
+Branches            git branch -D branch_name           :delete branch
+
+
+
