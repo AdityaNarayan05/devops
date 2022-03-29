@@ -1,0 +1,6 @@
+git stash      :temporary storge for unstaged and uncommitted changes
+git reflog     :A log of all project change made including deleted commits
+git merge      :combining commits from different branches by creating a new merge commit(recursive)
+                or by moving the HEAD(fast-forward)
+git rebase     :change the base (i.e. the parent commit) of commitin another branch
+git cherry-pick: copy including the change made only in this commit as HEAD to other branch
